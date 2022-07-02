@@ -13,12 +13,26 @@
 // console.log(practice('Hello'))
 
 
-function practice (num) {
-    for(let i =1; i < num; i++){
-        if (i % 5 !== 0){
-            console.log(i)
-        }
-    }
-}
+// function practice (num) {
+//     for(let i =1; i < num; i++){
+//         if (i % 5 !== 0){
+//             console.log(i)
+//         }
+//     }
+// }
 
-practice(10)
+// practice(10)
+
+let word = ''
+let words = []
+while(word !== 'stop'){
+    words = prompt('Enter a word')
+    words.push(word)
+}
+words.pop()
+console.log(words)
+
+
+function repeatS (a,b){
+    return b.repeat(a)
+}
