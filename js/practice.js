@@ -1,9 +1,9 @@
-function practice (str){
-    let arrS = str.split(' ').map( a => a.length)
-    return Math.min(...arrS)
-}
+// function practice (str){
+//     let arrS = str.split(' ').map( a => a.length)
+//     return Math.min(...arrS)
+// }
 
-console.log(practice("This is the shortest word"))
+// console.log(practice("This is the shortest word"))
 
 
 // function practice (num) {
@@ -63,3 +63,23 @@ console.log(practice("This is the shortest word"))
 // console.log(words)
 
 
+function whoWon(pChoice){
+    if (pChoice === 'rock' && rockPaperScissors() === 'scissors' || pChoice === 'paper' && rockPaperScissors() === 'rock' || pChoice === 'scissors' && rockPaperScissors() === 'paper'){
+        console.log('Player won')
+    } else if (pChoice === rockPaperScissors()){
+        console.log('Tie')
+    } else {
+        console.log('Computer won')
+    }
+}
+
+
+class Animal {
+    constructor(breed, age){
+        this.breed = breed,
+        this.age = age
+    }
+}
+extends class Dog {
+    
+}
