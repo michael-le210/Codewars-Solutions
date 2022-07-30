@@ -37,3 +37,14 @@
 //     return b.repeat(a)
 // }
 
+function practice (arr){
+    let sum = 0
+    arr.forEach(ele => {
+        if (ele > 0){
+          sum = sum + ele  
+        }
+    })
+    return sum
+}
+
+console.log(practice([1,-4,7,12]))
