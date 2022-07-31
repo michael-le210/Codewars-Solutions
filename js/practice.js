@@ -1,27 +1,20 @@
-// // function practice (str){
-// //     let vows = ['a','e','i','o','u']
-// //     let vowCount = 0
-// //     for (let i of str){
-// //         if(vows.includes(i)){
-// //             vowCount++
-// //         }
+function practice (str){
+    let arrS = str.split(' ')
+    return (`${Math.max(...arrS)} ${Math.min(...arrS)}`)
+}
 
-// //     } 
-// //     return vowCount
-// // }
-
-// // console.log(practice('Hello'))
+console.log(practice("1 2 3 4 5"))
 
 
-// // function practice (num) {
-// //     for(let i =1; i < num; i++){
-// //         if (i % 5 !== 0){
-// //             console.log(i)
-// //         }
-// //     }
-// // }
+// function practice (num) {
+//     let summation = 0
+//     for (let i = 1; i <= num; i++){
+//         summation = summation + i
+//     }
+//     console.log(summation)
+// }
 
-// // practice(10)
+// practice(8)
 
 // let word = ''
 // let words = []
@@ -37,14 +30,47 @@
 //     return b.repeat(a)
 // }
 
-function practice (arr){
-    let sum = 0
-    arr.forEach(ele => {
-        if (ele > 0){
-          sum = sum + ele  
-        }
-    })
-    return sum
-}
+// function practice (arr){
+//     let sum = 0
+//     arr.forEach(ele => {
+//      if (ele === true){
+//           sum ++
+//      }
+//     });
+//     return sum
+// }
 
-console.log(practice([1,-4,7,12]))
+// console.log(practice([true,  true,  true,  false,
+//     true,  true,  true,  true ,
+//     true,  false, true,  false,
+//     true,  false, false, true ,
+//     true,  true,  true,  true ,
+//     false, false, true,  true]))
+
+
+// let board = 8
+// let boardS = ''
+
+// for (let i = 0; i < board; i++){
+//     for (let x = 0; x < board; i++){
+//         if ((x + i) % 2 === 0) {
+//             boardS += ' '
+//         } else {
+//             boardS += '#'
+//         }
+
+//     }
+//     boardS += '\n'
+// }
+// console.log(boardS)
+
+// let word = ''
+// let words = []
+// while(word !== 'stop'){
+//     word = prompt("Enter a word")
+//     words.push(word)
+// }
+// words.pop()
+// console.log(words)
+
+
