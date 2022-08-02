@@ -1,9 +1,9 @@
 function practice (str){
-    let arrS = str.split(' ')
-    return (`${Math.max(...arrS)} ${Math.min(...arrS)}`)
+    let arrS = str.split(' ').map( a => a.length)
+    return Math.min(...arrS)
 }
 
-console.log(practice("1 2 3 4 5"))
+console.log(practice("This is the shortest word"))
 
 
 // function practice (num) {
@@ -31,21 +31,10 @@ console.log(practice("1 2 3 4 5"))
 // }
 
 // function practice (arr){
-//     let sum = 0
-//     arr.forEach(ele => {
-//      if (ele === true){
-//           sum ++
-//      }
-//     });
-//     return sum
+//    return arr.map((ele,ind) => `${ind + 1}: ${ele}`)
 // }
 
-// console.log(practice([true,  true,  true,  false,
-//     true,  true,  true,  true ,
-//     true,  false, true,  false,
-//     true,  false, false, true ,
-//     true,  true,  true,  true ,
-//     false, false, true,  true]))
+// console.log(practice(["a", "b", "c"]))
 
 
 // let board = 8
